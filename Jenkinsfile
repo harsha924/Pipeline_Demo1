@@ -1,7 +1,7 @@
 node {
 step([
     $class: 'ExecuteDslScripts',
-    scriptLocation: [scriptText: 'job("name 'CICD_Master' description 'Demo Build job'")'],
+    scriptLocation: [scriptText: 'job("CICD_Master")'],
     removedJobAction: 'DELETE',
     removedViewAction: 'DELETE',
     lookupStrategy: 'SEED_JOB',
