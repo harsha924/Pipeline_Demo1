@@ -1,7 +1,7 @@
 node {
 step([
     $class: 'ExecuteDslScripts',
-    scriptLocation: [targets: ['dslJob.groovy']],
+    scriptLocation: [scriptText: 'job("name 'CICD_Master' description 'Demo Build job'")'],
     removedJobAction: 'DELETE',
     removedViewAction: 'DELETE',
     lookupStrategy: 'SEED_JOB',
